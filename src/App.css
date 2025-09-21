@@ -1,0 +1,122 @@
+/* src/App.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f0f8ff;
+  transition: background 0.5s ease;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background 1s ease;
+}
+
+/* Glassmorphism card */
+.card {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* City name */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Coordinates */
+p {
+  font-size: 18px;
+  color: #f0f8ff;
+  margin: 5px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Temperature */
+h2 {
+  font-size: 40px;
+  color: #ffeb3b;
+  margin: 15px 0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Weather condition */
+h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Description */
+p.desc {
+  font-size: 18px;
+  color: #e0f7fa;
+  margin: 5px 0 15px 0;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Farming suggestion */
+p.suggestion {
+  font-size: 18px;
+  color: #a5d6a7;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Weather icon */
+img {
+  width: 120px;
+  height: 120px;
+  margin: 10px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation for icon */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Error messages */
+.error {
+  color: #ff5252;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 20px; }
+  p { font-size: 16px; }
+  .card { padding: 20px; }
+}
